@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Website FAQs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ce7878;
+            color: #333;
+        }
+
+        .faq-section {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #d4e3e9;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-section h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #650436;
+        }
+
+        .faq-item {
+            margin-bottom: 10px;
+            border-bottom: 1px solid #1a2887;
+        }
+
+        .faq-question {
+            display: block;
+            padding: 15px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #90344e;
+            text-decoration: none;
+            background: #f9f9f9;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .faq-question:hover {
+            background-color: #f0f8ff;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            padding: 0 15px;
+            font-size: 14px;
+            color: #555;
+            transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+        }
+
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        input[type="checkbox"]:checked ~ .faq-answer {
+            max-height: 200px;
+            padding: 15px;
+        }
+
+        input[type="checkbox"]:checked + .faq-question {
+            background-color: #e6f7ff;
+        }
+
+        input[type="checkbox"]:checked + .faq-question::after {
+            content: "-";
+            float: right;
+        }
+
+        .faq-question::after {
+            content: "+";
+            float: right;
+            font-size: 20px;
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <section class="faq-section">
+        <h1>Frequently Asked Questions</h1>
+
+        <div class="faq-item">
+            <input type="checkbox" id="faq1">
+            <label class="faq-question" for="faq1">What is the best time to work out?</label>
+            <div class="faq-answer">
+                <p>The best time to work out is when you feel most energized and can be consistent. Morning and evening workouts are both effective.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <input type="checkbox" id="faq2">
+            <label class="faq-question" for="faq2">How often should I exercise?</label>
+            <div class="faq-answer">
+                <p>It's recommended to exercise at least 3-5 times per week, depending on your fitness level and goals.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <input type="checkbox" id="faq3">
+            <label class="faq-question" for="faq3">What is a balanced diet?</label>
+            <div class="faq-answer">
+                <p>A balanced diet includes a mix of proteins, carbohydrates, healthy fats, vitamins, and minerals to fuel your body and support fitness goals.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <input type="checkbox" id="faq4">
+            <label class="faq-question" for="faq4">How can I lose weight effectively?</label>
+            <div class="faq-answer">
+                <p>Combine a calorie-controlled diet with regular exercise and ensure you maintain consistency and patience.</p>
+            </div>
+        </div>
+    </section><br><br>
+    <center><button><a href="website.html">Back to Main Page</a></button></center>
+</body>
+</html>
